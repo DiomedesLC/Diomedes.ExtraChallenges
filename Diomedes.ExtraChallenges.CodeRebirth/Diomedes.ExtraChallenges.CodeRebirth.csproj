@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>com.diomedeslc.diomedes.extrachallenges.coderebirth</AssemblyName>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Diomedes -->
+    <Reference Include="me.loaforc.diomedes.dll">
+      <HintPath>$(SolutionDir)deps/me.loaforc.diomedes.dll</HintPath>
+    </Reference>
+    <PackageReference Include="BepInEx.Core" Version="5.*" PrivateAssets="all"/>
+
+    <PackageReference Include="XuXiaolan-CodeRebirth" Version="1.6.4" PrivateAssets="all"/>
+    <Reference Include="MMHOOK_CodeRebirth.dll">
+      <HintPath>$(ProjectDir)deps/MMHOOK_CodeRebirth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

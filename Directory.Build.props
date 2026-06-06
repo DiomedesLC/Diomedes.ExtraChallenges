@@ -1,0 +1,33 @@
+<Project>
+    <PropertyGroup>
+        <Version>1.0.0</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Authors>XuXiaolan,loaforc</Authors>
+        <LangVersion>latest</LangVersion>
+        <IsPackable>false</IsPackable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>embedded</DebugType>
+        <!--
+        Trim the project path to prevent players from potentially
+        viewing Private Information in stack traces.
+        -->
+        <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=./</PathMap>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <!-- Netcode Patcher -->
+    <PropertyGroup>
+        <NetcodePatcherUnityVersion>2022.3.62</NetcodePatcherUnityVersion>
+        <NetcodePatcherNetcodeVersion>1.12.2</NetcodePatcherNetcodeVersion>
+        <NetcodePatcherTransportVersion>1.0.0</NetcodePatcherTransportVersion>
+    </PropertyGroup>
+</Project>

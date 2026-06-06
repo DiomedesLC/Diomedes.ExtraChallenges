@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Diomedes.ExtraChallenges/Diomedes.ExtraChallenges.csproj" />
+  <Project Path="Diomedes.ExtraChallenges.CodeRebirth/Diomedes.ExtraChallenges.CodeRebirth.csproj" />
+</Solution>

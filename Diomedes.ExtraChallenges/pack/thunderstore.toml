@@ -1,0 +1,30 @@
+﻿[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "Diomedes"
+name = "Diomedes_ExtraChallenges"
+description = "Expanded set of bingo challenges"
+websiteUrl = "https://thunderstore.io"
+containsNsfwContent = false
+[package.dependencies]
+TeamXiaolan-DawnLib = "0.9.21"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "../../build"
+
+[[build.copy]]
+source = "../bin/Release/netstandard2.1/com.diomedeslc.diomedes.extrachallenges.dll"
+target = "./BepInEx/plugins/Diomedes_ExtraChallenges/"
+
+[[build.copy]]
+source = "../bin/Release/netstandard2.1/com.diomedeslc.diomedes.extrachallenges.coderebirth.dll"
+target = "./BepInEx/plugins/Diomedes_ExtraChallenges/"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "riskofrain2", ]
+[publish.categories]
+riskofrain2 = [ "items", "skills", ]
